@@ -112,44 +112,79 @@ export const facilitiesdata = [
 export const testimonialdata = [
     {
         name: "John Doe",
-        images: "review1.png",
+        image: "review1.png",
         star: 5.0,
         packet: "Al Nasr Hajj Platinum",
-        review: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus impedit, consequatur dolorem minima sequi architecto magnam fugiat aliquam!",
+        review: "I had an incredible experience with Al Nasr. The Hajj Platinum package provided everything I needed for a comfortable and fulfilling journey. The attention to detail and the quality of service surpassed my expectations. Highly recommended!"
     },
     {
         name: "Jonathan",
-        images: "review3.png",
+        image: "review3.png",
         star: 4.8,
         packet: "Al Nasr Hajj Gold",
-        review: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus impedit, consequatur dolorem minima sequi architecto magnam fugiat aliquam!",
+        review: "Choosing Al Nasr for my Hajj journey was one of the best decisions I've made. The Gold package offered excellent accommodations and support throughout the pilgrimage. I felt safe and well-cared-for every step of the way."
     },
     {
         name: "Donny",
-        images: "review2.png",
+        image: "review2.png",
         star: 4.9,
         packet: "Al Nasr Umrah 17 days",
-        review: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus impedit, consequatur dolorem minima sequi architecto magnam fugiat aliquam!",
+        review: "My Umrah experience with Al Nasr was truly unforgettable. The 17-day package allowed me to immerse myself fully in the spiritual journey. The team's professionalism and dedication made the trip smooth and enriching."
     },
     {
         name: "Christian",
-        images: "review5.png",
+        image: "review5.png",
         star: 5.0,
         packet: "Al Nasr Hajj Silver",
-        review: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus impedit, consequatur dolorem minima sequi architecto magnam fugiat aliquam!",
+        review: "I couldn't be happier with my Hajj experience with Al Nasr. The Silver package provided everything I needed for a meaningful pilgrimage. The team's support and guidance were invaluable throughout the journey."
     },
     {
         name: "Abdul",
-        images: "review6.png",
+        image: "review6.png",
         star: 4.7,
         packet: "Al Nasr Umrah",
-        review: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus impedit, consequatur dolorem minima sequi architecto magnam fugiat aliquam!",
+        review: "Al Nasr exceeded my expectations with their Umrah package. The experience was smooth and well-organized from start to finish. I highly recommend them to anyone planning their spiritual journey."
     },
     {
-        name: "John Doe",
-        images: "review7.png",
+        name: "Jane Doe",
+        image: "review7.png",
         star: 5.0,
         packet: "Al Nasr Hajj",
-        review: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus impedit, consequatur dolorem minima sequi architecto magnam fugiat aliquam!",
+        review: "Al Nasr provided me with an unforgettable Hajj experience. From the accommodations to the guidance, everything was top-notch. I'm grateful for the opportunity to have embarked on this spiritual journey with them."
     },
+    {
+        name: "Alice",
+        image: "review8.png",
+        star: 4.5,
+        packet: "Al Nasr Umrah Deluxe",
+        review: "My Umrah Deluxe experience with Al Nasr was exceptional. The deluxe package offered luxurious accommodations and personalized service throughout the journey. It truly exceeded my expectations."
+    },
+    {
+        name: "Bob",
+        image: "review1.png",
+        star: 4.8,
+        packet: "Al Nasr Hajj VIP",
+        review: "As a VIP Hajj traveler, I expected nothing but the best from Al Nasr, and they delivered. The VIP package provided exclusive services and privileges that made my pilgrimage truly special. Highly recommend for those seeking a premium Hajj experience."
+    },
+    {
+        name: "Emily",
+        image: "review2.png",
+        star: 4.9,
+        packet: "Al Nasr Umrah Family",
+        review: "Our family Umrah experience with Al Nasr was unforgettable. The family package catered to all our needs, ensuring a smooth and enjoyable journey for everyone. We created beautiful memories together, thanks to Al Nasr's excellent services."
+    },
+    {
+        name: "Michael",
+        image: "review3.png",
+        star: 4.7,
+        packet: "Al Nasr Hajj Group",
+        review: "Joining Al Nasr's Hajj Group was a fantastic decision. The group package provided camaraderie and support throughout the pilgrimage. It was reassuring to have fellow travelers and knowledgeable guides by my side. A truly enriching experience."
+    },
+    {
+        name: "Sarah",
+        image: "review5.png",
+        star: 4.8,
+        packet: "Al Nasr Umrah Solo",
+        review: "Embarking on a solo Umrah journey with Al Nasr was empowering. The solo package offered independence and flexibility, allowing me to tailor the experience to my preferences. I felt supported and safe every step of the way. Highly recommended for solo travelers."
+    }
 ]

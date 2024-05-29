@@ -20,10 +20,10 @@ const Airways: React.FC = () => {
                 <p className="text-pLg md:text-pXL lg:text-pText">We cooperate with several airlines for Umrah and Hajj </p>
                 <p className=" text-dspGreen bg-dspLightGreen py-2 px-4 w-fit rounded-xl flex gap-5 items-center text-pXL "> <FaStar className="text-dspYellow text-pText" /> 5.0 Rating </p>
             </div>
-            <div className=" airways self-center grid grid-cols-1 md:grid-cols-2 lg:flex items-center lg:flex-row overflow-x-scroll gap-5 lg:gap-10 xl:gap-20  ">
+            <div className=" airways self-center grid grid-cols-1 md:grid-cols-2 lg:flex items-center lg:flex-row overflow-x-hidden lg:overflow-x-scroll gap-5 lg:gap-10 xl:gap-20  ">
                 {airways.map((item, index) => (
                     <div key={index} className="min-w-max max-w-max">
-                        <Image src={item} alt="airways" width={288} height={77} />
+                        <Image src={item} alt="airways" width={200} height={200} />
                     </div>
                 ))}
             </div>

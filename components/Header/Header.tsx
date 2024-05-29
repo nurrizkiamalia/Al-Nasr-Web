@@ -24,7 +24,7 @@ const Header: React.FC = () => {
 
   return (
     <>
-      <ContentContainer className=" relative flex justify-between items-center py-10 w-full">
+      <ContentContainer className=" relative flex justify-between items-center py-10 ">
         <div className="flex justify-between items-center w-full">
           <div>
             <Image src={logo} alt="logo" />
