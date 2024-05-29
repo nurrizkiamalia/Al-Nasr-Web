@@ -12,8 +12,14 @@ import { useState } from "react";
 const Header: React.FC = () => {
   const [isOpen, setIsOpen] = useState<Boolean>(false);
 
-  const handleClick = () => {
-    setIsOpen((prev) => !prev);
+  const handleClickOpen = () => {
+    setIsOpen(false);
+    document.body.style.overflow = "hidden";
+  };
+  
+  const handleClickClose = () => {
+    setIsOpen(true);
+    document.body.style.overflow = "visible";
   };
 
   return (
@@ -31,21 +37,21 @@ const Header: React.FC = () => {
           </div>
         </div>
         <button
-          onClick={handleClick}
+          onClick={handleClickOpen}
           className="border-[1px] bg-dspGreen border-white shadow-shadow1 shadow-gray-300 rounded-xl lg:hidden p-5 "
         >
           <FaBars className="text-white" />
         </button>
         <div
-          className={`w-full absolute lg:hidden top-0 left-0 ${
+          className={`w-full z-50 absolute lg:hidden top-0 left-0 ${
             isOpen ? "hidden" : "lg:block"
           }`}
         >
           <div
-            className={` p-5 h-screen bg-dspGreen w-full flex flex-col items-start gap-5 `}
+            className={` responsive-nav p-5 h-screen bg-dspGreen w-full flex flex-col items-start gap-5 `}
           >
             <button
-              onClick={handleClick}
+              onClick={handleClickClose}
               className=" self-end w-fit border-[1px] bg-dspGreen border-white shadow-shadow1 shadow-gray-300 rounded-xl lg:hidden p-5 "
             >
               {" "}

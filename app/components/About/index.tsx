@@ -5,7 +5,7 @@ import RightContentAbout from "./RightContentAbout"
 const About: React.FC = () => {
     return(
         <>
-        <ContentContainer className="flex flex-col-reverse w-full lg:flex-row lg:items-center gap-5 py-[100px] bg-dspBgGreen">
+        <ContentContainer className="flex flex-col-reverse w-full lg:flex-row lg:items-center gap-5 py-[100px] bg-dspBgGreen" id="about">
             <div className="lg:w-[45%] ">
                 <LeftContentAbout />
             </div>

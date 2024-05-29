@@ -5,4 +5,5 @@
 
 .airways{
     scrollbar-width: none;
+    scroll-behavior: smooth;
 }
