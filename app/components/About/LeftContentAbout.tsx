@@ -16,7 +16,7 @@ const LeftContentAbout: React.FC = () => {
         <div className=" absolute top-0 ">
           <Image src={aboutImg} alt="about image" className=" " />
         </div>
-        <div className=" absolute top-14 right-0 flex gap-5 items-center bg-white border-[1px] border-dspYellow p-2 rounded-xl w-fit ">
+        <div className=" absolute md:top-14 right-0 flex gap-5 items-center bg-white border-[1px] border-dspYellow p-2 rounded-xl w-fit ">
           <Image src={review1} alt="reviewer" />
           <div className="">
             <p>Ali Humairah</p>
@@ -26,7 +26,7 @@ const LeftContentAbout: React.FC = () => {
             </p>
           </div>
         </div>
-        <div className=" absolute bottom-[25%] right-0 flex gap-5 items-center bg-white border-[1px] border-dspGreen p-2 rounded-xl w-fit ">
+        <div className=" absolute bottom-[15%] md:bottom-[25%] right-0 flex gap-5 items-center bg-white border-[1px] border-dspGreen p-2 rounded-xl w-fit ">
           <Image src={review2} alt="reviewer" />
           <div className="">
             <p>Sahrul Alqani</p>

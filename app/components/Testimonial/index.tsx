@@ -27,12 +27,12 @@ const Testimonial: React.FC = () => {
           </div>
         </div>
         <div className="flex flex-col gap-5 self-start w-full">
-          <div className="airways relative flex flex-col items-center lg:flex-row overflow-x-hidden lg:overflow-x-auto py-2 gap-5 lg:gap-10">
+          <div className="airways relative lg:flex flex-col items-center overflow-x-auto py-2 gap-5 lg:gap-10">
             <div className="flex flex-nowrap gap-10">
               <TestimonialBox data={firstHalfData} />
             </div>
           </div>
-          <div className="airways hidden relative lg:flex flex-col items-center lg:flex-ro overflow-x-hiddenw lg:overflow-x-auto py-2 gap-5 lg:gap-10">
+          <div className="airways relative lg:flex flex-col items-center overflow-x-auto py-2 gap-5 lg:gap-10">
             <div className="flex flex-nowrap gap-10">
               <TestimonialBox data={secondHalfData} />
             </div>
