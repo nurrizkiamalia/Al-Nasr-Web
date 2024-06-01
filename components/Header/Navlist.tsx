@@ -1,7 +1,8 @@
 import Link from "next/link"
 
 interface NavProps{
-    className?: string
+    className?: string;
+    onClickLink?: () => void;
 }
 
 const path = [
@@ -12,11 +13,15 @@ const path = [
     { pathTo: "Contact Us", path: "/#footer" },
 ]
 
-const Navlist: React.FC<NavProps> = ({className}) => {
+const Navlist: React.FC<NavProps> = ({className, onClickLink}) => {
 
     const handleClick = () => {
-        document.body.style.overflow = "visible"
-    }
+        document.body.style.overflow = "visible";
+        if (onClickLink) {
+          onClickLink();
+        }
+    };
+
     return(
         <>
         {path.map((item) => (

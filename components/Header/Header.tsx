@@ -7,19 +7,26 @@ import Button from "../Button";
 import ContentContainer from "@/components/ContentContainer";
 import { FaBars } from "react-icons/fa";
 import { IoCloseSharp } from "react-icons/io5";
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 const Header: React.FC = () => {
   const [isOpen, setIsOpen] = useState<Boolean>(false);
+  const navRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    if (isOpen) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = 'visible';
+    }
+  }, [isOpen]);
 
   const handleClickOpen = () => {
     setIsOpen(true);
-    document.body.style.overflow = "hidden";
   };
 
   const handleClickClose = () => {
     setIsOpen(false);
-    document.body.style.overflow = "visible";
   };
 
   return (
@@ -43,7 +50,8 @@ const Header: React.FC = () => {
           <FaBars className="text-white" />
         </button>
         <div
-          className={`w-full z-50 absolute lg:hidden top-0 left-0 ${
+          ref={navRef}
+          className={` w-full z-50 absolute lg:hidden top-0 left-0 ${
             isOpen ? "block" : "hidden"
           }`}
         >
@@ -56,7 +64,7 @@ const Header: React.FC = () => {
             >
               <IoCloseSharp className="text-white" />
             </button>
-            <Navlist className="text-white flex flex-col items-start justify-start gap-3" />
+            <Navlist className="text-white flex flex-col items-start justify-start gap-3" onClickLink={handleClickClose}  />
           </div>
         </div>
       </ContentContainer>
